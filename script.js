@@ -20,7 +20,6 @@ function generateGrid(){
     let squares = document.querySelectorAll("div.square");
     squares.forEach(square => {
         square.addEventListener('mouseover', function(e){
-            console.log(e);
             e.target.style.opacity = parseFloat(e.target.style.opacity) + 0.2;
         })
     });
