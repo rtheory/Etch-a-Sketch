@@ -10,7 +10,8 @@ function generateGrid(){
         for (let col = 0; col < gridSize; col++){
             let div = document.createElement("div");
             div.className = "square";
-            div.textContent = '';
+            div.style.backgroundColor = "black";
+            div.style.opacity = "0.0";
             gridContainer.appendChild(div);
         }
     }
@@ -20,7 +21,7 @@ function generateGrid(){
     squares.forEach(square => {
         square.addEventListener('mouseover', function(e){
             console.log(e);
-            e.target.style.backgroundColor = 'red';
+            e.target.style.opacity = parseFloat(e.target.style.opacity) + 0.2;
         })
     });
 }
