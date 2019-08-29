@@ -1,0 +1,13 @@
+#gridContainer {
+    margin: 25px;
+    width: 600px; 
+    height: 600px;
+    display: grid; 
+    border-style: solid;
+}
+
+.square {
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+}
